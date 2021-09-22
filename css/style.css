@@ -85,7 +85,44 @@ main {
     grid-area: preco-area;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    padding: 2rem
+    padding: 3rem;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 20px;
+}
+
+.price__main {
+    display: grid;
+    grid-template-areas:
+        "preco-titulo"
+        "preco-valor"
+        "preco-descricao"
+        "preco-botao";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    text-align: start;
+}
+
+.price__titulo {
+    grid-area: preco-titulo;
+    grid-row: 1 / 2;
+    font-size: 1.2rem;
+    color: #fdfdfd;
+    padding-bottom: 1.5rem;
+}
+
+.price__valor {
+    grid-area: preco-valor;
+    grid-row: 2 / 3;
+}
+
+.price__descricao {
+    grid-area: preco-descricao;
+    grid-row: 3 / 4;
+}
+
+.price__botao {
+    grid-area: preco-botao;
+    grid-row: 4 / 5;
 }
 
 .grid__quemsomos {
