@@ -113,16 +113,42 @@ main {
 .price__valor {
     grid-area: preco-valor;
     grid-row: 2 / 3;
+    font-size: 2rem;
+    color: #fdfdfd;
+    font-weight: 700;
+    padding-bottom: .8rem;
+}
+
+.price__valor span {
+    vertical-align: 30%;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #f0f0f062;
+
 }
 
 .price__descricao {
     grid-area: preco-descricao;
     grid-row: 3 / 4;
+    color: #fdfdfd;
+    padding-bottom: 2rem;
 }
 
 .price__botao {
     grid-area: preco-botao;
     grid-row: 4 / 5;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    color: #fdfdfd;
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+.price__botao:visited,
+.price__botao:active,
+.price__botao:link,
+.price__botao:hover {
+    text-decoration: none;
 }
 
 .grid__quemsomos {
