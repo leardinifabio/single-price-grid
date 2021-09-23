@@ -168,4 +168,22 @@ main {
         "quemsomos-lista";
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    text-align: start;
+}
+
+.quemsomos__titulo {
+    grid-area: quemsomos-titulo;
+    grid-row: 1 / 2;
+    color: #fdfdfd;
+    font-size: 1.2rem;
+    padding-bottom: 1.3rem;
+}
+
+.quemsomos__lista {
+    grid-area: quemsomos-lista;
+    grid-row: 2 / 3;
+    color: #fdfdfd;
+    font-size: .9rem;
+    font-weight: 200;
+    line-height: 1.5rem;
 }
